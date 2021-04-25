@@ -9,6 +9,7 @@ import Logo from '../../assets/logo.svg';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 import getValidationErrors from '../../utils/getValidationErrors';
+import { Link } from 'react-router-dom';
 
 const SignUp: React.FC = () => {
   const formRef = useRef<FormHandles>(null);
@@ -49,9 +50,9 @@ const SignUp: React.FC = () => {
           <Button type="submit" >Cadastrar</Button>
         </Form>
 
-        <a href="forgot">
+        <Link to="/">
           <FiArrowLeft />
-          Voltar para logon</a>
+          Voltar para logon</Link>
 
       </Content>
     </Container>

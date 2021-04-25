@@ -11,6 +11,7 @@ import Input from '../../components/Input';
 import Button from '../../components/Button';
 import { useAuth } from '../../hooks/AuthContext';
 import { useToast } from '../../hooks/ToastContext';
+import { Link } from 'react-router-dom';
 
 interface SignFormData {
   email: string;
@@ -62,12 +63,12 @@ const SignIn: React.FC = () => {
 
           <Button type="submit" >Entrar</Button>
 
-          <a href="forgot">Esqueci minha senha</a>
+          <Link to="forgot">Esqueci minha senha</Link>
         </Form>
 
-        <a href="forgot">
+        <Link to="/signup">
           <FiLogIn />
-          Criar conta</a>
+          Criar conta</Link>
 
       </Content>
 
